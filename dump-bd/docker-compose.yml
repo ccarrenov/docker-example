@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mysql_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dump-bd-container
+    command: mkdir -p /home/dump
+    command: ls -la /home/dump
+    command: python3 --version
+    volumes:
+      - ./:/home/dump
+    working_dir: /home/dump
+    command: python3 dumpbd.py

@@ -1,0 +1,14 @@
+[
+    {
+        "engine" : "mysql",
+        "data":     { 
+            "hostname": "127.0.0.1",
+            "port" : "3306",
+            "username": "root",
+            "password": "1234567890",
+            "database": "name-database",
+            "folderpath" : "recovery/mysql/",
+            "foldername": "name-database"
+        }
+    }
+]
